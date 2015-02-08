@@ -9,7 +9,7 @@ var card = new UI.Card({
 
 card.show();
 
-var device_id = 'another';
+var device_id = 'asdf';
 var URL = "http://help-me-help-you.herokuapp.com/goals/1?device_id=" + device_id;
 
 //Request focus from API
@@ -30,7 +30,9 @@ ajax(
       card.subtitle('');
       card.body(statement);
     } else {
-      card.subtitle('Set your goal!');
+      card.title('Set your focus!');
+      card.subtitle('');
+      card.body('Commit on your phone');
     }
   },
   function(error) {
